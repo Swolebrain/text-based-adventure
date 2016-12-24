@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your dad confronts you</title>
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- -->
+  <div class="img-container" id='dadconfronts'>
+
+  </div>
+  <div id="text-container">
+    <p>Your father toils on and on while you waste your life wallowing in self
+      pity and letting your student loans accumulate interest.
+    </p>
+    <p>
+      Finally, one day your father's patience runs out and he brings up the
+      topic of your choice of getting a business major with a liberal arts
+      minor at a state college. "Son, in life, if we want things, we must
+      take them for ourselves," he groans. "The reason why I supported you
+      through that stupid choice of a college major was because I had faith
+      that through difficulty, you would grow. You would learn to sieze the
+      day and learn to recognize and take advantage of opportunities in front
+      of you."
+    </p>
+    <p>
+      "But dad, there are no opportunities," you whine.
+    </p>
+    <p>
+      "Of course not, son. Opportunities only surface if you go and look for
+      them. Nothing will find its way to you through a Reddit post or a meme,"
+      your father retorts.
+    </p>
+    <p>
+      After a few seconds of silence, your father offers a minimum wage trainee
+      position at a local factory. What do you do?
+    </p>
+    <form>
+      <legend>What do you do?</legend>
+      <p><input type="radio" value="0" name="choice">You think about
+      Harambe and the possibility of meeting with him.</p>
+      <p><input type="radio" value="1" name="choice">You ask your dad what to do.</p>
+      <p><input type="radio" value="2" name="choice">
+        You nod and make the determination that you will change your life.
+      </p>
+      <p><input type="radio" value="3" name="choice">Shrug</p>
+      <div class="btn">Make Selection</div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script>
+    var links = [
+      "death.html",
+      "death.html",
+      "jobs.html",
+      "death.html"
+    ];
+    $('.btn').on('click', function(){
+      var selectedIndex = $("input[name='choice']:checked").val();
+      if (!selectedIndex) {
+        alert("select something fool");
+        return;
+      }
+      selectedIndex = Number(selectedIndex);
+      window.location = links[selectedIndex];
+    });
+  </script>
+</body>
+</html>

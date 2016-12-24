@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The most Tremendous Game in the World</title>
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- -->
+  <div class="img-container">
+
+  </div>
+  <div id="text-container">
+    <p>You finished college and have no job. You are forced to move back in
+    with your parents and endure a perennial intravenous drip of shame.
+    Your ears ring with the buzz of failure and the ever-looming question
+    of whether college was worth it hangs over your head like a hazy dark
+    cloud that follows your every step. Mixed feelings of guilt, despair,
+    and self-loathing slosh around your psyche. Do you...
+    </p>
+    <form>
+      <legend>What do you do?</legend>
+      <p><input type="radio" value="0" name="choice">You contemplate
+        slipping into the dark void and relish in the thoughts of
+        sweet release.</p>
+      <p><input type="radio" value="1" name="choice">You just hide the
+        pain and tough it out while applying to three more jobs. </p>
+      <p><input type="radio" value="2" name="choice">You focus all your
+        attention on avoiding your dad's tormented, disappointed gaze.</p>
+      <p><input type="radio" value="3" name="choice">Google some dank
+        memes and worry about it later.</p>
+      <p><input type="radio" value="4" name="choice"/>But I still have a bit of
+      shark week to watch on my parents' DVR so I've got that going for me
+      which is nice</p>
+      <div class="btn">Make Selection</div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script>
+    var links = [
+      "death.html",
+      "jobs.html",
+      "dadconfronts.html",
+      "death.html",
+      "death.html"
+    ];
+    $('.btn').on('click', function(){
+      var selectedIndex = $("input[name='choice']:checked").val();
+      if (!selectedIndex) {
+        alert("select something fool");
+        return;
+      }
+      selectedIndex = Number(selectedIndex);
+      window.location = links[selectedIndex];
+    });
+  </script>
+</body>
+</html>

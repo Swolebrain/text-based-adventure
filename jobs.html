@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Trough of Disillusionment</title>
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- -->
+  <div class="img-container" id="jobs">
+
+  </div>
+  <div id="text-container">
+    <p>You go on every job board and apply to what feels like hundreds of jobs,
+      but is actually just a couple of dozen.
+    </p>
+    <p>
+      Your sense of worth walks the edge of a knife, but you refuse to quit.
+      You continue frantically applying to jobs, all day every day.
+    </p>
+    <p>
+      Soon enough, you start finding a reward in the personal growth you
+      are experiencing from continuing in this seemingly-futile struggle. You
+      start learning about websites and making websites for your friends and
+      family. At this point, your days are 12 hour shifts split between
+      learning time and job applications with ever more elaborate cover letters.
+    </p>
+    <p>
+      Rejection doesn't phase you any more at all. Your numerous job applications
+      have resulted in your information ending up in the hands of a few
+      stock brokerages and insurance companies that are offering you
+      opportunities to sell for them on a commission-only basis.
+    </p>
+
+    <form>
+      <legend>What will you do?</legend>
+      <p><input type="radio" value="0" name="choice">
+        Pick up a job selling insurance at one of those financial companies.
+      </p>
+      <p><input type="radio" value="1" name="choice">
+        Expand your job target to include sales positions in retail banking
+        and other industries where you earn part salary and part commission.
+      </p>
+      <p><input type="radio" value="2" name="choice">
+        You focus on learning how to make websites and continue to make
+        websites for your friends and family with the goal of launching yourself
+        into a career as a web designer.
+      </p>
+      <p><input type="radio" value="3" name="choice">Continue applying to jobs, eventually one will bite.</p>
+      <div class="btn">Make Selection</div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script>
+    var links = [
+      "death.html",
+      "sales.html",
+      "web.html",
+      "death.html"
+    ];
+    $('.btn').on('click', function(){
+      var selectedIndex = $("input[name='choice']:checked").val();
+      if (!selectedIndex) {
+        alert("select something fool");
+        return;
+      }
+      selectedIndex = Number(selectedIndex);
+      window.location = links[selectedIndex];
+    });
+  </script>
+</body>
+</html>

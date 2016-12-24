@@ -1,0 +1,77 @@
+body,html{
+  margin:0;
+  padding:0 0 1.5rem 0;
+  background-color: #353535;
+  color: #c4c4c4;
+  font-family: 'Trirong', serif;
+  line-height: 1.5rem;
+}
+.img-container{
+  height:50vh;
+  background-image: url('../img/level1.png');
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+#text-container{
+  min-height:50vh;
+  max-width:700px;
+  margin: 0 auto;
+  position:relative;
+}
+#text-container>p, h1, h2, h3, h4{
+  text-align: center;
+}
+#text-container p, #text-container form{
+  padding:1rem;
+}
+#death{
+  background-image: url("../img/death2.jpg");
+}
+#dadconfronts{
+  background-image: url("../img/dad.jpg");
+}
+#jobs{
+  background-image: url("../img/perseverance.png");
+}
+#victory{
+  background-image: url("../img/victory.jpg");
+}
+.btn {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+  position:absolute;
+  right:2rem;
+}
+.btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
